@@ -461,10 +461,15 @@ header nav .animate__animated.animate__fadeInRight {
     width: 1300px;
     max-width: 100%;
     padding: 0 20px;
-    margin-bottom: 200px;
+    overflow: hidden;
 }
 
 #servicesSlider{
+    margin: auto;
+    width: 1300px;
+    max-width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
     width: 1100px;
     max-width: 100%;
     margin: auto;
@@ -489,6 +494,7 @@ header nav .animate__animated.animate__fadeInRight {
     border-radius: 50px;
     cursor: pointer;
     position: relative;
+    user-select: none;
 }
 
 #servicesSlider h2 span{
@@ -516,6 +522,13 @@ header nav .animate__animated.animate__fadeInRight {
 
 #servicesPack{
     margin-top: 40px;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: space-evenly; */
+    width: 300%;
+    position: relative;
+    left: -100%;
+    transition: all ease 0.3s;
 }
 
 #servicesPack .servicePackSlides{
@@ -523,6 +536,9 @@ header nav .animate__animated.animate__fadeInRight {
     border: 1px solid #8348FF;
     border-radius: 5px;
     padding: 30px 40px;
+    width: 100%;
+    margin: 0 10px;
+
 }
 
 #servicesPack .servicePackSlides .innerSPDiv{
@@ -530,8 +546,6 @@ header nav .animate__animated.animate__fadeInRight {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 50px;
     grid-column-gap: 100px;
-    /* border: 1px solid red; */
-    width: fit-content;
     margin: auto;
 }
 
@@ -551,12 +565,272 @@ header nav .animate__animated.animate__fadeInRight {
 
 #servicesPack .servicePackSlides .innerSPDiv div p{
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: #555;
 }
 
+/* Prevous Works */
+#PWHeading, #customerSatHeading{
+    margin: 70px 0 50px;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    color: #333;
+}
 
+#PWHeading span, #customerSatHeading span{
+    width: 100%;
+    height: 5px;
+    margin-top: 4px;
+    background: #8348FF;
+    border-radius: 0 20px 20px 0;
+}
+
+#satRecord{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#satRecord h2{
+    font-size: 100px;
+    color: #444;
+}
+
+#satRecord p{
+    font-size: 20px;
+    color: #8348FF;
+}
+
+/* This is for customer reviews */
+#reviewHeading{
+    margin: 130px 0 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.cusReview{
+    padding: 25px;
+    border-radius: 5px;
+    background: #E7E7E7;
+    border: 1px solid #8348FF;
+}
+
+.cusReview .customerProfile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cusReview .customerProfile .personDetails{
+    margin-left: 15px;
+}
+
+.cusReview .customerProfile .personDetails h3{
+    margin-bottom: 2px;
+    color: #444;
+    font-weight: 600;
+}
+
+.cusReview .customerProfile .personDetails p{
+    color: #8348FF;
+    font-size: 15px;
+}
+
+.cusReview .customerProfile img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cusReview .customerTypes{
+    margin: 15px 0 10px;
+    color: #555;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.cusReview .Ratings{
+    color: #8348FF;
+    font-size: 18px;
+}
+
+/* Contact Form */
+#contactForm{
+    background: #E7E7E7;
+    margin: 140px 0 200px;
+    border-radius: 5px;
+    border: 1px solid #8348FF;
+    padding: 45px;
+}
+
+#contactForm .fields{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contactForm .fields .fieldName{
+    width: 45%;
+}
+
+#contactForm .fields input, .message textarea{
+    background: #D9D9D9;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-left: 20px;
+    outline-color: #8348FF;
+    margin-top: 7px;
+}
+
+.message textarea{
+    resize: none;
+    height: 100px;
+    padding: 20px;
+}
+
+#contactForm .fields p, .message p{
+    color: #333;
+    font-size: 18px;
+}
+
+#contactForm #buttonDiv{
+    text-align: right;
+}
+
+#contactForm #buttonDiv button{
+    margin-top: 25px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: #8348FF;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+
+
+
+}
+
+/* Start building footer */
+#Footer{
+    background: #8348FF;
+}
+#innerFooter{
+    width: 1300px;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+#footerLogo {
+    margin-bottom: 20px;
+}
+
+#contactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contactDetails h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#contactDetails p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+#contactDetails p{
+    margin-bottom: 6px;
+}
+
+
+#innerFooter .footerContent{
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr 350px;
+    grid-column-gap: 40px;
+}
+
+#innerFooter .footerContent div{
+    /* border: 1px solid red; */
+}
+
+#innerFooter .footerContent .socialIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#innerFooter .footerContent .socialIcon ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+#innerFooter .footerContent .socialIcon ul img{
+    width: 45px;
+}
+
+#innerFooter #footerImg{
+    height: 250px;
+}
+
+#footerPages ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    height: 100%;
+}
+
+#footerPages ul li{
+    cursor: pointer;
+}
+
+#innerFooter .footerContent .socialIcon p{
+    font-size: 15px;
+    text-align: justify;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+#footerDesclaimer{
+    text-align: center;
+    margin: 70px 0 0;
+    color: white;
+    font-weight: 300;
+}
+
+
+
+
+/* Start Making responsive website */
 @media (max-width: 1300px){
     
     #homeWelcome .headingBtns{
@@ -570,10 +844,32 @@ header nav .animate__animated.animate__fadeInRight {
         width: 57%;
         overflow: hidden;
     }
-    
+}
+
+
+@media (max-width: 1200px) {
+    #servicesPack .servicePackSlides .innerSPDiv div p{
+        font-size: 22px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div img{
+        width: 50px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv{
+        grid-row-gap: 50px;
+        grid-column-gap: 80px;
+    }
+    #innerFooter .footerContent{
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 100px 1fr 350px;
+    }
+
 }
 
 @media (max-width: 1100px) {    
+    #servicesPack .servicePackSlides .innerSPDiv{
+        grid-column-gap: 60px;
+        width: 100%;
+    }
     #teamSection .teamSelf{
         grid-column-gap: 20px;
     }
@@ -601,10 +897,60 @@ header nav .animate__animated.animate__fadeInRight {
     #homeWelcome div:first-child{
         margin: 100px 0 150px;
     }
+    #reviewHeading{
+        margin: 100px 0 50px;
+    }
+    #innerFooter .footerContent{
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 100px 1fr 300px;
+    }
     
 }
 
+
+@media (max-width: 1000px){
+    #servicesPack .servicePackSlides .innerSPDiv{
+        grid-column-gap: 40px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div img{
+        width: 40px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div p{
+        font-size: 20px;
+    }
+    #satRecord div{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    #satRecord{
+        flex-wrap: wrap;
+    }
+    #contactForm .fields .fieldName{
+        width: 48%;
+    }
+    #footerLogo{
+        margin-bottom: 50px;
+    }
+    #innerFooter .footerContent{
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 50px;
+    }
+}
+
 @media (max-width: 750px) {
+    
+    #servicesPack .servicePackSlides .innerSPDiv{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 40px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div img{
+        width: 50px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div p{
+        font-size: 22px;
+    }
     
     #homeWelcome div:last-child{
         width: 100%;
@@ -720,10 +1066,79 @@ header nav .animate__animated.animate__fadeInRight {
         top: 200%;
         left: 0;
     }
+    #contactForm{
+        padding: 30px;
+    }
+    #contactForm .fields{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    #contactForm .fields .fieldName{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contactForm input{
+        height: 45px;
+    }
+    #contactForm .fields input, .message textarea{
+        font-size: 17px;
+    }
+    #contactForm .fields p{
+        font-size: 16px;
+    }
+    #contactForm #buttonDiv button{
+        cursor: default;
+        height: 45px;
+        font-size: 18px;
+        max-width: 100%;
+    }
+    #footerPages ul li{
+        cursor: default;
+    }
+}
 
+
+@media (max-width: 650px){
+    
+    #servicesPack .servicePackSlides .innerSPDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #servicesPack .servicePackSlides .innerSPDiv div img{
+        width: 60px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div p{
+        font-size: 23px;
+    }
+    #servicesPack .servicePackSlides{
+        margin: 10px;
+    }
+    #PWHeading, #customerSatHeading{
+        font-size: 30px;
+    }
+    .cusReview .customerTypes{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #reviewHeading{
+        font-size: 30px;
+    }
+    #reviewHeading{
+        margin: 70px 0 50px;
+    }
+    
+    #contactForm input{
+        height: 40px;
+    }
 }
 
 @media (max-width: 500px){
+    #servicesPack .servicePackSlides .innerSPDiv div img{
+        width: 45px;
+    }
+    #servicesPack .servicePackSlides .innerSPDiv div p{
+        font-size: 18px;
+    }
     #homeWelcome .headingBtns h1{
         font-size: 50px;
     }
@@ -743,6 +1158,21 @@ header nav .animate__animated.animate__fadeInRight {
     }
     #servicesSlider h2{
         font-size: 20px;
+    }
+    #satRecord div{
+        width: 100%;
+    }
+    #innerFooter .footerContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .socialIcon div{
+        margin-bottom: 30px;
+    }
+    #footerPages ul li{
+        margin-bottom: 20px;
+    }
+    #contactDetails div{
+        margin-bottom: 25px;
     }
 } 
 

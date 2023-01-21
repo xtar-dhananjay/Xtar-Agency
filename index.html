@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Img/Fav-icon.png" type="image/x-icon">
-    <!-- This is the custom css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- This is the custom css file for swiper.js -->
+    <link rel="stylesheet" href="css/customSwiper.css">
     <!-- This is the cdn of https://animate.style/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- This is CDN Link for google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-- swiper.js CDN Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- This is the CDN of fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- This is the custom css file -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Xtar Agency</title>
 </head>
 <body>
     
 
-    <header>
+    <header id="home">
         <nav>
             <a href=""><img src="Img/mainLogo.png" alt="Xtar-Logo"></a>
             <span class="material-icons menuBtn">menu</span>
             <ul>
-                <li class="Active">Home</li>
-                <li>About</li>
-                <li>Service's</li>
-                <li class="noNavHove animate__animated animate__fadeInRight"><button>Contact Now</button></li>
+                <li id="homeBtn">Home</li>
+                <li id="aboutBtn">About</li>
+                <li id="servicesBtn">Service's</li>
+                <li class="noNavHove animate__animated animate__fadeInRight" id="contactBtn"><button>Contact Now</button></li>
             </ul>
         </nav>
     </header>
@@ -87,7 +93,7 @@
         <section id="xtarServices">
             <h2 id="serviceHeading">Xtar Services</h2>
             <div id="servicesSlider">
-                <h2 id="serviceGraphic"> <span></span> Graphic Designing</h2>
+                <h2 id="serviceGraphic"> <span class="web"></span> Graphic Designing</h2>
                 <h2 id="serviceWeb">Web Development</h2>
                 <h2 id="serviceDigital">Digital Marketing</h2>
             </div>
@@ -134,14 +140,290 @@
                     
                     </div>
                 </div>
+                <div class="servicePackSlides">
+                    <div class="innerSPDiv">
+                        
+                        <div>
+                            <img src="Img/webDeveloper/1.png" alt="Blog Website">
+                            <p>Blog Website</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/2.png" alt="Website To App">
+                            <p>Website To App</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/3.png" alt="Custom Website">
+                            <p>Custom Website</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/4.png" alt="Ecommerce">
+                            <p>Ecommerce</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/5.png" alt="Ticket Booking Website">
+                            <p>Ticket Booking Website</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/6.png" alt="Landing Page">
+                            <p>Landing Page</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/7.png" alt="Fix Website Problems">
+                            <p>Fix Website Problems</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/8.png" alt="Custom Software">
+                            <p>Custom Software</p>
+                        </div>
+                        <div>
+                            <img src="Img/webDeveloper/9.png" alt="Redesign Website">
+                            <p>Redesign Website</p>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="servicePackSlides">
+                    <div class="innerSPDiv">
+                        
+                        <div>
+                            <img src="Img/digitalMarketer/1.png" alt="SEO">
+                            <p>SEO</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/2.png" alt="Google Ads">
+                            <p>Google Ads</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/3.png" alt="Facebook Ads">
+                            <p>Facebook Ads</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/4.png" alt="Branding">
+                            <p>Branding</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/5.png" alt="Email Marketing">
+                            <p>Email Marketing</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/6.png" alt="WhatsApp Marketing">
+                            <p>WhatsApp Marketing</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/7.png" alt="Link Building">
+                            <p>Link Building</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/8.png" alt="Web Optimization">
+                            <p>Web Optimization</p>
+                        </div>
+                        <div>
+                            <img src="Img/digitalMarketer/9.png" alt="Social Media Marketing">
+                            <p>Social Media Marketing</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="prevousWorks">
+                <h2 id="PWHeading">Previous Work's<span></span></h2>
+                <!-- Slider main container -->
+                <div class="swiper mySwiper1 swiper1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="Img/previousWorks/3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div id="customerSat">
+                <h2 id="customerSatHeading">Customer Satisfaction<span></span></h2>
+                <div id="satRecord">
+                    <div>
+                        <h2 totalnum="20">0</h2>
+                        <p>Year Of Expreience</p>
+                    </div>
+                    <div>
+                        <h2 totalnum="45">0</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div>
+                        <h2 totalnum="40">0</h2>
+                        <p>Project Finished</p>
+                    </div>
+                    <div>
+                        <h2 totalnum="72">0</h2>
+                        <p>Digital Awards</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="customerReviews">
+                <h2 id="reviewHeading">Customer Review's</h2>
+                <div class="swiper mySwiper2 swiper2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide cusReview">
+                            <div class="customerProfile">
+                                <img src="Img/customerReviews/1.png" alt="customer-Photo">
+                                <div class="personDetails">
+                                    <h3>Naman Roy</h3>
+                                    <p>11, jan 2023</p>
+                                </div>
+                            </div>
+                            <p class="customerTypes">Typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, </p>
+                            <div class="Ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide cusReview">
+                            <div class="customerProfile">
+                                <img src="Img/customerReviews/1.png" alt="customer-Photo">
+                                <div class="personDetails">
+                                    <h3>Naman Roy</h3>
+                                    <p>11, jan 2023</p>
+                                </div>
+                            </div>
+                            <p class="customerTypes">Typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, </p>
+                            <div class="Ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide cusReview">
+                            <div class="customerProfile">
+                                <img src="Img/customerReviews/1.png" alt="customer-Photo">
+                                <div class="personDetails">
+                                    <h3>Naman Roy</h3>
+                                    <p>11, jan 2023</p>
+                                </div>
+                            </div>
+                            <p class="customerTypes">Typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. In publishing and graphic design, </p>
+                            <div class="Ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>                                
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactForm">
+                <form action="" id="Form">
+                    <div class="fields">
+                        <div class="fieldName">
+                            <p>Full Name</p>
+                            <input type="text" id="fullName" name="name" required>
+                        </div>
+                        <div class="fieldName">
+                            <p>Company Name(Optional)</p>
+                            <input type="text" id="companyName" name="companyName">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="fieldName">
+                            <p>Email Address</p>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="fieldName">
+                            <p>Phone Number</p>
+                            <input type="number" id="phone" name="Phone" required>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Message</p>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div id="buttonDiv">
+                        <button name="submitBtn" id="submitBtn">Sand Enquiry</button>
+                    </div>
+                </form>
             </div>
             
         </section>
 
+        <footer id="Footer">
+            <div id="innerFooter">
+                <div id="footerLogo">
+                    <img src="Img/mainLogo.png" alt="">
+                </div>
+                <div class="footerContent">
+                    <div id="contactDetails">
+                        <div class="mail">
+                            <h3>Email</h3>
+                            <p><a href="mailto:XtarDhananjay@Gmail.Com">XtarDhananjay@Gmail.Com</a></p>
+                            <p><a href="mailto:XtarDhananjay@Gmail.Com">GFXD4D@Gmail.Com</a></p>
+                        </div>
+                        <div class="call">
+                            <h3>Call</h3>
+                            <p><a href="tel:9990156923">+91 99901 56923</a></p>
+                            <p><a href="tel:9990156923">+91 83686 92759</a></p>
+                        </div>
+                    </div>
+                    <div id="footerPages">
+                        <ul>
+                            <li id="fHome">Home</li>
+                            <li id="fService">Service's</li>
+                            <li id="fAbout">About</li>
+                            <li id="fContact">Contact</li>
+                        </ul>
+                    </div>
+                    <div id="footerImg">
+                        <img src="Img/footer/footerImg.png" alt="F ooter-Image">
+                    </div>
+                    <div class="socialIcon">
+                        <div>
+                            <ul>
+                                <li><a href=""><img src="Img/footer/instagram 2.png" alt=""></a></li>
+                                <li><a href=""><img src="Img/footer/whatsapp 2.png" alt=""></a></li>
+                                <li><a href=""><img src="Img/footer/facebook 2.png" alt=""></a></li>
+                                <li><a href=""><img src="Img/footer/youtube (2) 1.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing dolor sit amet consectetur adipisicing dolor sit amet consectetur adipisicing elit. Repellendus nisi, eos, accusantium pariatur laborum repellat voluptate rerum explicabo minima quae doloribus non? Voluptatem voluptatum itaque aspernatur omnis quam hic adipisci, distinctio, ex</p>
+                    </div>
+                </div>
+                <p id="footerDesclaimer">Copyright © 2023 <b>Xtar Company</b>. All rights reserved.</p>
+            </div>
+        </footer>
 
     </main>
 
-
+    <!-- Swiper.js CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- This is the swiper.js custom js file -->
+    <script src="Js/customSwiper.js"></script>
+    <!-- This is the custom js file -->
     <script src="Js/script.js"></script>
 
 </body>
